@@ -232,5 +232,5 @@ describe('This testsuite is to test shopping of mobiles', function(){
 
     })
 
-})
+
 

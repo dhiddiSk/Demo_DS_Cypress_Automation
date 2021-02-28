@@ -1,1 +1,15 @@
-{}
+{
+"env":{
+
+    "mobileShopHomePageUrl": "https://rahulshettyacademy.com/angularpractice/shop",
+
+    "submitFormsUrl": "https://rahulshettyacademy.com/angularpractice/",
+
+    "vegetablesHomepageUrl": "https://rahulshettyacademy.com/seleniumPractise/#/",
+
+    "FlightBookingUrl": "https://rahulshettyacademy.com/dropdownsPractise/#",
+
+    "AllButtonPageUrl": "https://rahulshettyacademy.com/AutomationPractice/"
+
+}
+}
