@@ -2,7 +2,6 @@
   "name": "sai",
   "email": "testing@gmail.com",
   "password": "123456789",
-  "shopurl" : "https://rahulshettyacademy.com/angularpractice/shop",
   "body": "Fixtures are a great way to mock data for responses to routes",
   "phones": ["Samsung Note 8", "iphone X", "Nokia Edge"],
   "Samsung Note 8": 85000,"iphone X":100000,"Nokia Edge":65000,

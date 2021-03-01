@@ -1,25 +1,9 @@
 /// <reference types="Cypress" />
 
-/*
-Plan step by step: 
--1 Search the vegetables in search bar and add them to the cart. 
--2 write an assertion on total number of items taken
--3 Click on the bag Icon and proceed to checkout
--4 Enter the text of promocode
--5 Click on apply and then click on place order
--6 Select the country in the dropdown of next page
--7 Check the check box of term's and conditions
--8 Click on the proceed button,
--9 Validate the text in that button
--10 Click on place order in the next page
-*/
-
 describe('Different types of buttons', function()
 
 {
-    
-  
-  it('Visit the site and test static dropdowns', function()
+    it('Visit the site and test static dropdowns', function()
 
     {
       
