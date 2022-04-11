@@ -1,15 +1,25 @@
 {
-"env":{
-
-    "mobileShopHomePageUrl": "https://rahulshettyacademy.com/angularpractice/shop",
-
-    "submitFormsUrl": "https://rahulshettyacademy.com/angularpractice/",
-
-    "vegetablesHomepageUrl": "https://rahulshettyacademy.com/seleniumPractise/#/",
-
-    "FlightBookingUrl": "https://rahulshettyacademy.com/dropdownsPractise/#",
-
-    "AllButtonPageUrl": "https://rahulshettyacademy.com/AutomationPractice/"
-
-}
+    "baseUrl": "https://rahulshettyacademy.com",
+    "env": {
+        "greeKartHomepageUrl": "/seleniumPractise/#/"
+    },
+    "viewportWidth": 1500,
+    "viewportHeight": 800,
+    "testFiles": "**/*.{feature,features}",
+    "ignoreTestFiles": "*.js",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "charts": true,
+        "json": true,
+        "html": true,
+        "reportFilename": "testReport",
+        "overwrite": true
+    },
+    "videoCompression": false,
+    "videosFolder": "cypress/videos",
+    "video": true,
+    "videoUploadOnPasses": false,
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "cypress/screenshots",
+    "trashAssetsBeforeRuns": true
 }
