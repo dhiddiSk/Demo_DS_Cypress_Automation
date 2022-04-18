@@ -3,8 +3,8 @@
     "env": {
         "greeKartHomepageUrl": "/seleniumPractise/#/"
     },
-    "viewportWidth": 1500,
-    "viewportHeight": 800,
+    "viewportWidth": 2500,
+    "viewportHeight": 1200,
     "testFiles": "**/*.{feature,features}",
     "ignoreTestFiles": "*.js",
     "reporter": "mochawesome",

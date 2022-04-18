@@ -1,5 +1,5 @@
 {
-  "name": "E2E automation tests",
+  "name": "e2etests",
   "version": "1.0.0",
   "description": "## **E2E Automation tests ** for portofolio",
   "main": "index.js",
@@ -33,6 +33,6 @@
     "mochawesome-report-generator": "^5.2.0"
   },
   "devDependencies": {
-    "cypress": "^9.5.0"
+    "cypress": "^9.5.4"
   }
 }
