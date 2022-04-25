@@ -12,26 +12,24 @@ Then(
   function () {
     // log the data to the console.
     cy.fixture("GreenKartTestData").then((productFixture) => {
-      let productPrice;
+      // let productPrice;
       cy.get(".products .product").each(($el, index, $list) => {
-        //console.log(`${index}, ${productFixture[index].id}`);
         
-        // productPrice = productFixture[index].price;
-        // since index is starting from zero
-        if ((index+1) === productFixture[index].id) {
-            console.log(`${index+1}, ${productFixture[index].id}`);
-          // cy.get(".products .product .product-image")
-          //   .eq(index)
-          //   .invoke("attr", "src")
-          //   .should("eq", productFixture[index].image);
-          // cy.get(".products .product .product-name")
-          //   .eq(index)
-          //   .should("contain.text", productFixture[index].name);
+        
+        // Assert the validation of product image.
+        cy.get(".products .product .product-image img")
+          .eq(index)
+          .should("have.attr", "src", productFixture[index].image);
 
-          // cy.get(".products .product .product-price")
-          //   .eq(index)
-          //   .should("contain.text", productPrice.toString());
-        }
+        // Assert the validation of the product name.
+        cy.get(".products .product .product-name")
+          .eq(index)
+          .should("contain.text", productFixture[index].name);
+
+        // Assert the validation of the product price.
+        cy.get(".products .product .product-price")
+          .eq(index)
+          .should("contain.text", productFixture[index].price.toString());
       });
     });
   }

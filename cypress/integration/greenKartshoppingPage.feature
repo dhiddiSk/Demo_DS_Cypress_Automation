@@ -9,13 +9,13 @@ Feature: Greenkart shopping home page feature
          Then I go through each product and validate the presence and their corresponding data that includes image, price, order, category.
 
 
-#     Scenario Outline: Validate the functionality of the search bar
-#          Then I enter the search <key> shortcut word and expect all the product with names that contains entered word.
-#          Then I clear the search bar
+    Scenario Outline: Validate the functionality of the search bar
+         Then I enter the search <key> shortcut word and expect all the product with names that contains entered word.
+         Then I clear the search bar
 
-#          Examples:
-#              | key |
-#              | br |
+         Examples:
+             | key |
+             | br |
 
 #     Scenario: Validate the functionaliy of adding products to cart
 #          Then I add <number> of items of items of this <product>
