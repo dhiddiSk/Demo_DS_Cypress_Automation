@@ -52,7 +52,7 @@ Then(
 );
 
 Then(
-  /^I add (.+) of items of this (.+)$/,
+  /^I add (.+) of items of product (.+)$/,
   function (numberOfProducts, addProduct) {
     let productName;
     
