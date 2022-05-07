@@ -26,6 +26,11 @@ And(/^I click on element at \"([^\"]*)\", indexed at \"([^\"]*)\"$/, function (e
   cy.get(element).eq(index).click();
 });
 
+Then(/^I click on element at \"([^\"]*)\", indexed at \"([^\"]*)\"$/, function (element, index) {
+  cy.get(element).eq(index).click();
+  cy.wait(4000);
+});
+
 And(/^Validate the toast message \"([^\"]*)\" at element \"([^\"]*)\"$/, function (message, element) {
-    cy.get(element).should('have.text', message);
+  cy.get(element).should('have.text', message);
 });

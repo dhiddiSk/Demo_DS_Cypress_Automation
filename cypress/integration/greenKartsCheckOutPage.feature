@@ -17,5 +17,5 @@ Feature: Greenkart shopping check out page feature
         Then I should be in the "greenKartCheckoutPageUrl" checkOutpage
         And I enter the promoCode "rahulshettyacademy" at element ".promocode", indexed at "0"
         Then I click on element at ".promoBtn", indexed at "0"
-        And Validate the toast message "Code applied ..!" at element ".promoWrapper .promoInfo"
+        And Validate the toast message "Code applied ..!" at element ".promoInfo"
         Then Validate if there is discount of "10" percent obeserved in the product price at element ".discountPerc"
