@@ -28,4 +28,3 @@ Feature: Greenkart shopping home page feature
                | 2  | Brocolli |
                | 3  | Carrot   |
                | 1  | Cucumber |
-
