@@ -1,10 +1,10 @@
 # Summary:
 
 The cypress tests in this project were written using a freely available. Refer to the below screenshot on what website looks like.
-![Website image](e-commerceWebsiteTests/siteImage.png)
+![Website image](/e-commerceWebsiteTests/e-commerceWebsiteTests/siteImage.png)
 
 
-Tech stack used: javasript, Cucumber[](https://cucumber.io/) , Cypress[](https://www.cypress.io/)
+### Tech stack used: javasript, Cucumber[](https://cucumber.io/) , Cypress[](https://www.cypress.io/)
 
 This project consists of the following important folders
 
