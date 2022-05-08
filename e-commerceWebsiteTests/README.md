@@ -3,7 +3,7 @@
 The cypress tests in this project were written using a freely available. Refer to the below screenshot on what website looks like.
 ![Website image](/e-commerceWebsiteTests/siteImage.png)
 
-### Tech stack used: javasript, Cucumber[Cucumber](https://cucumber.io/) , Cypress[Cypress](https://www.cypress.io/)
+### Tech stack used: javasript, [Cucumber](https://cucumber.io/) , [Cypress](https://www.cypress.io/)
 
 This project consists of the following important folders
 
@@ -11,7 +11,7 @@ This project consists of the following important folders
 
 - Test Features: Here the feature files describe the scenarios which will be certainly tested for the expected behavior with test scripts.
 
-- Test Scripts:  Test Scripts are written accordingly based on test feature scenarios. One can easily convert the test features to test script functions skeleton body using Tidy Gherkin[](https://chrome.google.com/webstore/detail/tidy-gherkin/nobemmencanophcnicjhfhnjiimegjeo?hl=en-GB).
+- Test Scripts:  Test Scripts are written accordingly based on test feature scenarios. One can easily convert the test features to test script functions skeleton body using Tidy [Gherkin](https://chrome.google.com/webstore/detail/tidy-gherkin/nobemmencanophcnicjhfhnjiimegjeo?hl=en-GB).
 
 - Test Data: The test data is located in the fixtures folder and can be used in the test scripts. This data remains unchanged during the time of test executions. One can call the fixtures file in the tests using `cy.fixtures('filename')`.
 
