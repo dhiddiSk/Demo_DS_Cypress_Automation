@@ -1,0 +1,25 @@
+{
+    "baseUrl": "https://rahulshettyacademy.com",
+    "env": {
+        "greeKartHomepageUrl": "/seleniumPractise/#/"
+    },
+    "viewportWidth": 2500,
+    "viewportHeight": 1200,
+    "testFiles": "**/*.{feature,features}",
+    "ignoreTestFiles": "*.js",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "charts": true,
+        "json": true,
+        "html": true,
+        "reportFilename": "testReport",
+        "overwrite": true
+    },
+    "videoCompression": false,
+    "videosFolder": "cypress/videos",
+    "video": true,
+    "videoUploadOnPasses": false,
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "cypress/screenshots",
+    "trashAssetsBeforeRuns": true
+}
