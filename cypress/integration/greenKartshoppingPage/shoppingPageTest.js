@@ -61,7 +61,6 @@ Then(
       
       if (productName.includes(addProduct)) {
         if (Number(numberOfProducts) === 1) {
-          console.log(productName);
           cy.get(".product-action button").eq(index).click();
         } else if (Number(numberOfProducts) > 1) {
           let tempCount = 0;
@@ -90,7 +89,6 @@ Then(
     cy.get(".cart-items .cart-item .product-total .quantity").eq(0).should(
       ($element) => {
         let numberOfItemsText = $element.text().toString();
-        console.log(`These are the number of items ${numberOfItemsText}`);
         let indexNumber = numberOfItemsText.indexOf('N');
         numberOfItems = numberOfItemsText.slice(0, indexNumber - 1);
         expect(no).to.equal(numberOfItems);

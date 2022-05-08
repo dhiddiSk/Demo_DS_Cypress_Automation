@@ -17,7 +17,6 @@ const {
       
       if (productName.includes(addProduct)) {
         if (Number(numberOfProducts) === 1) {
-          console.log(productName);
           cy.get(".product-action button").eq(index).click();
         } else if (Number(numberOfProducts) > 1) {
           let tempCount = 0;
