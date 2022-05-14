@@ -45,6 +45,14 @@ Cypress.Commands("signUp", (firstName, lastName, userName, password) => {
   cy.get(".MuiButton-label").click();
 });
 
+Cypress.Commands("login", (userName, password, rememeberMeCheck = false) => {
+  cy.get("#username").type(userName);
+  cy.get("#password").type(password);
+  if (rememeberMeCheck) {
+    cy.get("input[type = 'checkbox']").check();
+  }
+});
+
 //
 //
 // -- This is a child command --
