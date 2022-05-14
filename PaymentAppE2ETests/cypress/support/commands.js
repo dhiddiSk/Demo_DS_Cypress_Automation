@@ -1,4 +1,4 @@
-import * as constant from '../support/constants';
+import * as constant from "../support/constants";
 
 // ***********************************************
 // This example commands.js shows you how to
@@ -53,6 +53,22 @@ Cypress.Commands("login", (userName, password, rememeberMeCheck = false) => {
   if (rememeberMeCheck) {
     cy.get("input[type = 'checkbox']").check();
   }
+});
+
+Cypress.Commands("logout", () => {
+  cy.get("body").then((body) => {
+    if (
+      body.find(
+        ".MuiGrid-root.makeStyles-userProfile-254.MuiGrid-container.MuiGrid-align-items-xs-center.MuiGrid-justify-content-xs-space-between"
+      ).length > 0
+    ) {
+      cy.get(
+        ".MuiGrid-root.makeStyles-userProfile-254.MuiGrid-container.MuiGrid-align-items-xs-center.MuiGrid-justify-content-xs-space-between .MuiGrid-root.MuiGrid-item:nth-child(5)"
+      ).click();
+    } else {
+      cy.get('button[aria-label ="open drawer"]').click();
+    }
+  });
 });
 
 //
