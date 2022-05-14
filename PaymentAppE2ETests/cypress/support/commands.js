@@ -10,7 +10,7 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add("login", (email, password) => {
+Cypress.Commands.add("apiLogin", (email, password) => {
   if (loginEmailAddress === undefined && loginPassword === undefined) {
     cy.request({
       method: "POST",
@@ -35,6 +35,16 @@ Cypress.Commands.add("login", (email, password) => {
     });
   }
 });
+
+Cypress.Commands("signUp", (firstName, lastName, userName, password) => {
+  cy.get("#firstName").type(firstName);
+  cy.get("#lastName").type(lastName);
+  cy.get("#username").type(userName);
+  cy.get("#password").type(password);
+  cy.get("#confirmPassword").type(password);
+  cy.get(".MuiButton-label").click();
+});
+
 //
 //
 // -- This is a child command --
