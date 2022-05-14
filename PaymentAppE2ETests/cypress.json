@@ -1,1 +1,8 @@
-{}
+{
+    "env": {
+        "loginApi_url": "http://localhost:3001/login",
+        "login_url": "/login",
+        "products_url": "/products"
+      }
+
+}
