@@ -1,0 +1,1 @@
+- The cypress allows us to add our own commands to the cypress API. In this project, I have written few commands which can be used through out the project. Can be found here ![commands](cypress/support/commands.js)
